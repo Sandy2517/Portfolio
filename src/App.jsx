@@ -1,7 +1,6 @@
 import { useMemo, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-
-const profilePhoto = '/ITSME.jpg'
+import profilePhoto from './assets/profile.jpg'
 
 const typingWords = [
   'Threat Detection',
@@ -75,6 +74,39 @@ const projects = [
       'Created the detection pipeline and integrated the web-based inference flow.',
     impact:
       'Reached 81.2% accuracy and improved accessibility for hearing-impaired users.',
+  },
+  {
+    name: 'CampusBuddy',
+    overview:
+      'Smart e-pass gate system for educational institutions with multi-level approvals, QR scanning, and admin dashboards.',
+    tech: [
+      'Next.js (App Router)',
+      'Tailwind CSS',
+      'React Context',
+      'qrcode.react',
+      'html5-qrcode',
+    ],
+    contribution:
+      'Implemented approval workflows, QR-based validation, and admin dashboards with a cohesive UI.',
+    impact:
+      'Streamlined campus access by reducing manual gate checks and improving entry auditability.',
+  },
+  {
+    name: 'SecLog',
+    overview:
+      'Real-time security log understanding system using a fine-tuned LLM for classification, severity prediction, and actionable explanations.',
+    tech: [
+      'Python',
+      'HuggingFace Transformers + PEFT (LoRA)',
+      'FastAPI (async)',
+      'Redis / PostgreSQL',
+      'Docker',
+      'WebSockets / Redis Streams',
+    ],
+    contribution:
+      'Built streaming inference with async APIs and fine-tuned LLM outputs for structured security insights.',
+    impact:
+      'Delivered low-latency (<2s) classification and recommendations to accelerate incident response.',
   },
 ]
 
